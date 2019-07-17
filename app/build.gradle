@@ -26,11 +26,12 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-batch")
+
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     // Use MySQL Connector-J
     compile 'mysql:mysql-connector-java'
 
-    testCompile('org.springframework.boot:spring-boot-starter-batch')
+    testCompile("org.springframework.boot:spring-boot-starter-batch")
 }
